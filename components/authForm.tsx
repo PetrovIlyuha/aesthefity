@@ -186,7 +186,7 @@ const formStyles = {
   },
   formInputsFlex: {
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "column" as "column",
     alignItems: "center",
     width: "40vw",
   },
