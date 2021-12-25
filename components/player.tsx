@@ -236,7 +236,7 @@ const Player = () => {
               id="player-range"
               step={0.1}
               min={0}
-              max={duration ? duration.toFixed(2) : 0}
+              max={duration ? +duration.toFixed(2) : 0}
               onChange={onSeek}
               value={[seek]}
               onChangeStart={() => setIsSeeking(true)}
@@ -250,7 +250,7 @@ const Player = () => {
           </Box>
           <Box width="10%" marginLeft="20px">
             <Text fontSize="xs">
-              {humanReadableTime(duration.toFixed(0) || 0)}
+              {humanReadableTime(+duration.toFixed(0) || 0)}
             </Text>
           </Box>
         </Flex>
