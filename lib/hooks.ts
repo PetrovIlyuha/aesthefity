@@ -1,6 +1,5 @@
 import useSWR from "swr"
 import fetcher from "./fetcher"
-import { PlayList } from "@prisma/client"
 
 export const useCurrentUser = () => {
   const { data, error } = useSWR("me", fetcher)

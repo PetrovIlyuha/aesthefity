@@ -22,9 +22,9 @@ const AuthForm: FC<{ mode: AuthModes }> = ({ mode }) => {
     e.preventDefault()
     setIsLoading(true)
     if (mode === "signup") {
-      const user = await auth(mode, { name, email, password })
+      await auth(mode, { name, email, password })
     } else if (mode === "signin") {
-      const token = await auth(mode, { email, password })
+      await auth(mode, { email, password })
     }
     setIsLoading(false)
     router.push("/")

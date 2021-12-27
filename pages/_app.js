@@ -5,6 +5,7 @@ import "reset-css"
 import PlayerLayout from "../components/playerLayout"
 import "@fontsource/poppins"
 import "../styles/globals.css"
+import "animate.css"
 
 const theme = extendTheme({
   fonts: {
